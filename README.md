@@ -1,13 +1,13 @@
 # emoji-final-project
 Ling-144 Final Project on brand emoji usage
 
-This repository includes the files used for skimming from each brand, which will eventually be merged into one for ease of reading. Currently, working through each brand has worked the best.
+This repository includes the code and datasets used for each company I skimmed tweets from.
 
 The method used for skimming was **snscrape** and for filtering the tweets to contain only emoji's was **emoji** and **regex**.
 
-The files include:
+The files are split into 2 folders, **code** and **data**:
 
-1. **sncrape-code-tinder.py**, a python that contains the code used to scrape tweets from the user "tinder"
-2. **user-tweets-tinder.csv**, a csv that contains the initial scrape of 100 tweets from the tinder webpage that was then filtered
-3. **filter-code-tinder.py**, which contains the code used to filter the tweets to keep only ones with emoji's
-4. **skimmed-tweets-tinder.csv**, conatins the file of filtered tweets
+1. **emoji-count-brand.py** which contains the code for counting emojis from each brand
+2. **snscrape-filter-brand.py**, which contains the scraping and filter code for each brand that enabled me to look at tweets with only emojis
+  a. the code for tinder is broken into two files, **filter-code-tinder.py** and **snscrape-code-tinder.py**
+3. for the **data folder**, there are 2 separate .csv files for each brand, those being **brand-annotation.csv** and **brand-posneg-count.csv**
